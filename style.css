@@ -75,6 +75,16 @@ textarea {
     border: 2px solid black;
 }
 
+.saveButton {
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    display: inline-block;
+    background: url(./assets/images/save.png);
+    background-size: cover;
+    background-position: center;
+}
+
 
 /* .myCol1,
 .myCol2,
