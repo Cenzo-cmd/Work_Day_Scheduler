@@ -85,9 +85,15 @@ textarea {
     background-position: center;
 }
 
+.yellow {
+    background-color: yellow;
+}
 
-/* .myCol1,
-.myCol2,
-.myCol3 {
-    border: 2px solid black;
-} */
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: rgb(169, 172, 169);
+    color: black;
+}

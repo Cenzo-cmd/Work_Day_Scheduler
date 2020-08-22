@@ -3,24 +3,23 @@ $(document).ready(function() {
     var now = moment();
     var currentDay = moment().format("MMM Do yy");
     var justDay = moment().format("dddd");
-    var justHour = moment().format("hh:00 a");
-    console.log(justHour);
+
     $("#currentDay").text(justDay + " " + currentDay);
-
-
-    var leftCol = $(".myCol1");
 
     var hourBlocks = [];
 
-    for (let hour = 7; hour < 23; hour++) {
+    for (let hour = 7; hour < 24; hour++) {
         hourBlocks.push(moment({ hour }).format("hh:mma"));
-        // console.log(hourBlocks);
     }
 
     hourBlocks.forEach(function(hourBlock) {
-        let storedItem = localStorage.getItem(hourBlock);
+        console.log(hourBlock);
+        elementId = hourBlock.replace(/:/, "");
+        console.log(elementId);
+        let storedItem = localStorage.getItem(elementId);
         var blockTime = moment(hourBlock, 'h:mm a');
-        // console.log(blockTime);
+
+
 
         var addRow = $("<div></div>");
         addRow.addClass("row border-dark myRow");
@@ -35,7 +34,8 @@ $(document).ready(function() {
         var addCol2 = $("<input>");
         addCol2.addClass("col-8 border-dark text-center myCol2");
         addCol2.attr("placeholder", "Click here to type");
-        addCol2.attr("id", hourBlock);
+        addCol2.attr("id", elementId);
+        addCol2.addClass("hello");
         addCol2.val(storedItem);
         addRow.append(addCol2);
 
@@ -47,31 +47,29 @@ $(document).ready(function() {
         addCol3.append(addButton);
         addRow.append(addCol3);
 
-        blockColor(blockTime);
+        blockColor(blockTime, elementId);
     })
-
-
-
 
     $(".saveButton").on("click", function() {
         let textInput = $(this).parent().siblings("input").val();
         var idEl = $(this).parent().siblings("input").attr("id");
+        console.log("you clicked me");
 
         localStorage.setItem(idEl, textInput);
     })
 
-    function blockColor(blockTime) {
+    function blockColor(blockTime, elementId) {
         if (now.isSame(blockTime, "hour")) {
-
-            console.log("I am during");
+            getIdEl = "#" + elementId;
+            $(getIdEl).addClass("yellow");
         }
         if (now.isBefore(blockTime, "hour")) {
-
-            console.log("I am before");
+            getIdEl = "#" + elementId;
+            $(getIdEl).addClass("red");
         }
         if (now.isAfter(blockTime, "hour")) {
-
-            console.log("I am after");
+            getIdEl = "#" + elementId;
+            $(getIdEl).addClass("green");
         }
     }
 
