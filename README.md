@@ -8,7 +8,7 @@ This page was created to help manage our busy days.  Time is often elusive and t
 
 <img src="assets/images/overview1.png" width="400px">
 
-When an event is entered and the <img src="assets/images/save.png" width="20px"> button is clicked, your entry will automatically be saved in local storage.
+When an event is entered and the <img src="assets/images/save.png" width="30px"> button is clicked, your entry will automatically be saved in local storage.
 
 At the bottom of the page ther is a <img src="assets/images/clearBtn.png" width="200px"> which automatically clears all events that were placed in the scheduler.
 
