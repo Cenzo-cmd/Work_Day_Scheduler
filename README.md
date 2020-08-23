@@ -1,6 +1,6 @@
 # 📆 Work_Day_scheduler 📆
 
-https://cenzo-cmd.github.io/Work_Day_scheduler/
+[Click here for Scheduler](https://cenzo-cmd.github.io/Work_Day_scheduler/)
 
 "Time is what we want most, but what we use the worst."   -William Penn
 
