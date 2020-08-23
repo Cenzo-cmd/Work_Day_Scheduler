@@ -14,7 +14,7 @@ At the bottom of the page ther is a <img src="assets/images/clearBtn.png" width=
 
 <img src="assets/images/overview2.png" width="400px">
 
-Final thoughts
+📌 Final thoughts 📌
 
 I enjoyed this project and challenged myself to create all rows, columns and buttons through JavaScript, Jquery and DOM maninpulation.    
 
