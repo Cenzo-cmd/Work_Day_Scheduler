@@ -1,4 +1,4 @@
-# 📆 Work_Day_scheduler 📆
+# 📆 Work_Day_Scheduler 📆
 
 "Time is what we want most, but what we use the worst."   -William Penn
 
