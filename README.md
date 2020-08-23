@@ -1,8 +1,8 @@
 # 📆 Work_Day_scheduler 📆
 
-[Click here for Scheduler](https://cenzo-cmd.github.io/Work_Day_scheduler/)
-
 "Time is what we want most, but what we use the worst."   -William Penn
+
+[Click here for Scheduler](https://cenzo-cmd.github.io/Work_Day_scheduler/)
 
 This page was created to help manage our busy days.  Time is often elusive and tends to go by very quickly.  This will help keep all your daily tasks, goals and appointments in one place.  Current date and time are displayed at the top. The Scheduler automatically displays past hours in grey, current hour in red and future hours in green.
 
